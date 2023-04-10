@@ -1,0 +1,24 @@
+<div *ngFor="let el of dataOrder">
+    <div class="container">
+        <div class="box my-4 p-4 bg-light" *ngFor="let items of el.cartItems">
+            <div class="row g-4">
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                    <div class="image">
+                        <img class="w-100" [src]="items.product.imageCover" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-10 col-lg-11 d-flex justify-content-between align-items-center">
+                    <div class="items">
+                        <div>
+                            <h2 class="fw-bold">{{items.product.title|titleCut:7}}</h2>
+                            <h4 class="fw-bold text-main">price: {{items.price}}</h4>
+                        </div>
+                    </div>
+                    <div class="items flex-shrink-0">
+                        <span class="p-4">count : {{items.count}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
