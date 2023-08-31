@@ -1,4 +1,4 @@
 export const environment = {
-    'baseUrl' : 'https://route-ecommerce-app.vercel.app/' ,
+    'baseUrl' : 'https://ecommerce.routemisr.com/' ,
     'domain' : 'http://localhost:4200/'
 };
